@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOHIL Hair Studio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===================== PAGE TRANSITION OVERLAY ===================== -->
+    <div id="pt-overlay"
+        style="position:fixed;inset:0;background:#050505;z-index:999999;pointer-events:none;opacity:1;transition:opacity 0.6s cubic-bezier(0.22,1,0.36,1);">
+    </div>
+
+    <!-- ===================== INTRO VIDEO SCREEN ===================== -->
+
+
+    <!-- ===================== NAVBAR ===================== -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="#hero" class="logo">
+
+                <i class="fa-solid fa-scissors"></i>
+
+                <div>
+
+                    <h2>SOHIL</h2>
+
+                    <span>HAIR CUTTING</span>
+
+                </div>
+
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+
+
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#services">Services</a></li>
+
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="mobile-book-li"><a href="#contact" class="mobile-drawer-book-btn"><i
+                            class="fa-solid fa-calendar-check"></i> Book Now</a></li>
+                <li class="mobile-admin-li"><a href="admin/index.html" class="mobile-drawer-admin-btn"><i
+                            class="fa-solid fa-user-shield"></i> Admin Login</a></li>
+
+            </ul>
+
+            <a href="#contact" class="book-btn">
+
+                Book Now
+
+            </a>
+
+            <!-- Admin Login Icon -->
+            <a href="admin/index.html" class="admin-nav-icon" title="Admin Login" aria-label="Admin Login">
+                <i class="fa-solid fa-user-shield"></i>
+            </a>
+
+            <!-- Mobile Hamburger Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </nav>
+    </header>
+    <div class="cursor-glow"></div>
+    <!-- ===================== HERO ===================== -->
+
+    <section class="hero" id="hero">
+
+        <!-- Background Video -->
+
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="op-poster.webp">
+
+            <source src="op.mp4" type="video/mp4">
+        </video>
+
+        <div class="overlay"></div>
+
+        <div class="hero-container">
+
+            <!-- LEFT -->
+
+            <div class="hero-left">
+
+                <p class="welcome">
+
+                    WELCOME TO
+
+                </p>
+
+                <h1>
+
+                    SOHIL
+
+                    <span>HAIR CUTTING</span>
+
+                </h1>
+
+                <h3>
+
+                    Style • Confidence • Perfection
+
+                </h3>
+
+                <p class="hero-text">
+
+                    Discover premium haircuts, beard styling and luxury grooming experience.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#contact" class="btn-primary btn-red">
+
+                        <i class="fa-solid fa-calendar-check"></i> Book Appointment
+
+                    </a>
+
+                    <a href="#services" class="btn-secondary btn-black">
+
+                        <i class="fa-solid fa-scissors"></i> Our Services
+
+                    </a>
+
+                </div>
+
+                <!-- Hero Features (Mobile View Screenshot Matching) -->
+                <div class="hero-features-mobile">
+                    <div class="h-feature-item">
+                        <div class="h-feature-icon">
+                            <i class="fa-solid fa-scissors"></i>
+                        </div>
+                        <span class="h-feature-title">Premium<br>Haircuts</span>
+                    </div>
+                    <div class="h-feature-divider"></div>
+                    <div class="h-feature-item">
+                        <div class="h-feature-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <span class="h-feature-title">Beard<br>Styling</span>
+                    </div>
+                    <div class="h-feature-divider"></div>
+                    <div class="h-feature-item">
+                        <div class="h-feature-icon">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <span class="h-feature-title">Expert<br>Grooming</span>
+                    </div>
+                </div>
+
+            </div>
+            <!-- SERVICE-->
+
+
+
+
+            <!-- RIGHT -->
+
+            <div class="hero-right">
+
+                <div class="hero-image">
+
+                    <img src="SOHIL.webp" alt="Sohil Barber" width="800" height="900" loading="eager">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Social -->
+
+        <div class="social">
+
+            <a href="https://www.instagram.com/mr_sohiil_07?stkn=N3djeWJpaHJIcm1j" target="_blank"
+                rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+
+            <a href="https://www.facebook.com/sohilaalam87" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-facebook-f"></i></a>
+
+            <a href="https://wa.me/917355954554?text=Hello%20I%20am%20Sohil.%20I%20would%20like%20to%20book%20an%20appointment%20at%20Sohil%20Hair%20Studio.%20Please%20let%20me%20know%20the%20available%20time."
+                target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><i
+                    class="fab fa-whatsapp"></i></a>
+
+        </div>
+
+        <!-- Scroll -->
+
+        <div class="scroll-down">
+
+            <span></span>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+
+    <section class="about-section" id="about">
+
+        <div class="about-container">
+
+            <!-- LEFT IMAGE -->
+            <div class="about-image">
+
+                <img src="SOHIL.webp" alt="Sohil Hair Studio" width="800" height="900" loading="lazy">
+
+            </div>
+
+
+            <!-- RIGHT CONTENT -->
+            <div class="about-content">
+
+                <p class="about-tag">
+                    ABOUT SOHIL HAIR STUDIO
+                </p>
+
+                <h2>
+                    More Than Just
+                    <span>A Haircut.</span>
+                </h2>
+
+                <p class="about-description">
+                    Welcome to Sohil Hair Studio — your destination for
+                    premium haircuts, beard styling and complete grooming.
+                </p>
+
+                <p class="about-description">
+                    We combine modern hairstyles with professional
+                    techniques to give every client a clean, confident
+                    and stylish look.
+                </p>
+
+
+                <!-- FEATURES -->
+
+                <div class="about-features">
+
+                    <div class="about-feature">
+                        <i class="fa-solid fa-scissors"></i>
+
+                        <div>
+                            <h3>Expert Styling</h3>
+                            <p>Modern cuts with professional finishing.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="about-feature">
+                        <i class="fa-solid fa-user-tie"></i>
+
+                        <div>
+                            <h3>Premium Grooming</h3>
+                            <p>Complete grooming with attention to detail.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="about-feature">
+                        <i class="fa-solid fa-star"></i>
+
+                        <div>
+                            <h3>Quality Experience</h3>
+                            <p>Comfortable and professional service.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="about-feature">
+                        <i class="fa-solid fa-heart"></i>
+
+                        <div>
+                            <h3>Customer First</h3>
+                            <p>Your satisfaction is our priority.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <a href="DISCRIBE.html" class="about-btn">
+                    Discover More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ===================== SERVICES ===================== -->
+
+    <section class="services" id="services">
+
+        <div class="section-title">
+            <span>WHAT WE OFFER</span>
+            <h2>Premium Grooming Services</h2>
+        </div>
+
+        <div class="services-marquee-wrapper">
+            <div class="services-marquee">
+
+                <!-- SET 1 -->
+                <div class="service-card">
+                    <img src="rocky.webp" alt="Hair Cut" loading="lazy" width="260" height="180">
+                    <div class="service-info">
+                        <div class="icon"><i class="fa-solid fa-scissors"></i></div>
+                        <h3>Hair Cut</h3>
+                        <p>Trendy haircuts customized to suit your style.</p>
+                        <div class="price">Starting From <span>₹249</span></div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="beard.webp" alt="Beard Styling" loading="lazy" width="260" height="180">
+                    <div class="service-info">
+                        <div class="icon"><i class="fa-solid fa-user"></i></div>
+                        <h3>Beard Styling</h3>
+                        <p>Perfect beard shaping and styling.</p>
+                        <div class="price">Starting From <span>₹199</span></div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="haircut.webp" alt="Hair Spa" loading="lazy" width="260" height="180">
+                    <div class="service-info">
+                        <div class="icon"><i class="fa-solid fa-spa"></i></div>
+                        <h3>Hair Spa</h3>
+                        <p>Nourishing spa for smooth healthy hair.</p>
+                        <div class="price">Starting From <span>₹299</span></div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="color.webp" alt="Hair Color" loading="lazy" width="260" height="180">
+                    <div class="service-info">
+                        <div class="icon"><i class="fa-solid fa-droplet"></i></div>
+                        <h3>Hair Color</h3>
+                        <p>Premium quality coloring service.</p>
+                        <div class="price">Starting From <span>₹499</span></div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="child.webp" alt="Kids Hair Cut" loading="lazy" width="260" height="180">
+                    <div class="service-info">
+                        <div class="icon"><i class="fa-solid fa-child"></i></div>
+                        <h3>Kids Hair Cut</h3>
+                        <p>Comfortable stylish haircut for kids.</p>
+                        <div class="price">Starting From <span>₹149</span></div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="groom.webp" alt="Groom Special" loading="lazy" width="260" height="180">
+                    <div class="service-info">
+                        <div class="icon"><i class="fa-solid fa-crown"></i></div>
+                        <h3>Groom Special</h3>
+                        <p>Complete Grooming Package.</p>
+                        <div class="price">Starting From <span>₹999</span></div>
+                    </div>
+                </div>
+
+                <!-- SET 2 — duplicate for seamless infinite loop -->
+                <div class="service-card">
+                    <img src="rocky.webp" alt="Hair Cut" loading="lazy" width="260" height="180">
+                    <div class="service-info">
+                        <div class="icon"><i class="fa-solid fa-scissors"></i></div>
+                        <h3>Hair Cut</h3>
+                        <p>Trendy haircuts customized to suit your style.</p>
+                        <div class="price">Starting From <span>₹249</span></div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="beard.webp" alt="Beard Styling" loading="lazy" width="260" height="180">
+                    <div class="service-info">
+                        <div class="icon"><i class="fa-solid fa-user"></i></div>
+                        <h3>Beard Styling</h3>
+                        <p>Perfect beard shaping and styling.</p>
+                        <div class="price">Starting From <span>₹199</span></div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="w.webp" alt="Hair Spa" loading="lazy" width="260" height="180">
+                    <div class="service-info">
+                        <div class="icon"><i class="fa-solid fa-spa"></i></div>
+                        <h3>Hair Spa</h3>
+                        <p>Nourishing spa for smooth healthy hair.</p>
+                        <div class="price">Starting From <span>₹299</span></div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="color.webp" alt="Hair Color" loading="lazy" width="260" height="180">
+                    <div class="service-info">
+                        <div class="icon"><i class="fa-solid fa-droplet"></i></div>
+                        <h3>Hair Color</h3>
+                        <p>Premium quality coloring service.</p>
+                        <div class="price">Starting From <span>₹499</span></div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="child.webp" alt="Kids Hair Cut" loading="lazy" width="260" height="180">
+                    <div class="service-info">
+                        <div class="icon"><i class="fa-solid fa-child"></i></div>
+                        <h3>Kids Hair Cut</h3>
+                        <p>Comfortable stylish haircut for kids.</p>
+                        <div class="price">Starting From <span>₹149</span></div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="groom.webp" alt="Groom Special" loading="lazy" width="260" height="180">
+                    <div class="service-info">
+                        <div class="icon"><i class="fa-solid fa-crown"></i></div>
+                        <h3>Groom Special</h3>
+                        <p>Complete Grooming Package.</p>
+                        <div class="price">Starting From <span>₹999</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+     GALLERY SECTION
+========================= -->
+
+    <section class="gallery-section" id="gallery">
+
+        <video class="gallery-bg-video" autoplay muted loop playsinline preload="metadata" poster="neon-poster.webp">
+            <source src="neon.mp4" type="video/mp4">
+        </video>
+
+        <div class="gallery-title">
+
+            <p>OUR WORK</p>
+
+            <h2>
+                STYLE <span>GALLERY</span>
+            </h2>
+
+            <p class="gallery-subtitle">
+                Explore our latest haircuts, beard styles and grooming work.
+            </p>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+            <!-- SAMPLE IMAGE 1 -->
+            <div class="gallery-item">
+                <img src="h/WhatsApp Image 2026-10-21 at 2.02.43 PM.webp" alt="Modern Fade" loading="lazy" width="400" height="410">
+                <div class="gallery-overlay">
+                    <i class="fa-solid fa-scissors"></i>
+                    <h3>Modern Fade</h3>
+                    <p>Sharp & Clean</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="gallery-button">
+
+            <a href="view-more.html">
+                View Full Gallery
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+     CONTACT SECTION
+========================= -->
+
+    <section class="contact-section" id="contact">
+
+        <div class="contact-title">
+
+            <p>GET IN TOUCH</p>
+
+            <h2>
+                BOOK YOUR <span>APPOINTMENT</span>
+            </h2>
+
+            <p class="contact-subtitle">
+                Ready for a fresh new look? Visit Sohil Hair Studio
+                or contact us to book your appointment.
+            </p>
+
+        </div>
+
+
+        <div class="contact-container">
+
+            <!-- LEFT INFO -->
+
+            <div class="contact-info">
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div>
+                        <h3>Visit Us</h3>
+                        <p>
+                            Musanagar, Kanpur Dehat 208209
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+
+                    <div>
+                        <h3>Call Us</h3>
+                        <p>
+                            <a href="tel:+917355954554" style="color: inherit; text-decoration: none;">+91
+                                7355954554</a>
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+
+                    <div>
+                        <h3>WhatsApp</h3>
+                        <p>
+                            <a href="https://wa.me/917355954554?text=Hello%20Sohil%20Hair%20Studio,%20I%20want%20to%20book%20an%20appointment."
+                                target="_blank" rel="noopener noreferrer"
+                                style="color: inherit; text-decoration: none;">Chat: +91 7355954554</a>
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+
+                    <div>
+                        <h3>Opening Hours</h3>
+                        <p>
+                            Mon – Sun<br>
+                            08:00 AM – 10:00 PM
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT FORM -->
+
+            <div class="contact-form">
+
+                <h3>Make An Appointment</h3>
+
+                <p>
+                    Fill in your details and we'll get back to you.
+                </p>
+
+
+                <!-- WHATSAPP APPOINTMENT FORM -->
+
+                <form id="appointmentForm">
+
+                    <div class="form-row">
+
+                        <input type="text" id="clientName" name="name" autocomplete="name" placeholder="Your Name"
+                            required>
+
+                        <input type="tel" id="clientPhone" name="phone" autocomplete="tel" placeholder="Phone Number"
+                            required>
+
+                    </div>
+
+
+                    <select id="clientService" name="service" required>
+
+                        <option value="">
+                            Select Service
+                        </option>
+
+                        <option value="Premium Haircut">
+                            Premium Haircut
+                        </option>
+
+                        <option value="Beard Styling">
+                            Beard Styling
+                        </option>
+
+                        <option value="Hair Spa">
+                            Hair Spa
+                        </option>
+
+                        <option value="Complete Grooming">
+                            Complete Grooming
+                        </option>
+
+                    </select>
+
+
+                    <input type="date" id="clientDate" name="date" required>
+
+
+                    <textarea id="clientMessage" name="message" rows="5" placeholder="Your Message"></textarea>
+
+
+                    <button type="submit">
+
+                        Book Appointment
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================== DEVELOPER PORTFOLIO FOOTER ===================== -->
+    <footer class="dev-footer" id="developer-footer">
+
+        <!-- ===================== OP SOHIL DEVELOPER DETAILS (mobile: above social icons) ===================== -->
+        <div class="dev-footer-mobile-top">
+            <div class="dev-brand dev-brand-mobile">
+                <div class="dev-logo-badge">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="dev-brand-text">
+                    <h3 class="dev-name">OP SOHIL</h3>
+                    <div class="dev-role-badge">
+                        <i class="fa-solid fa-terminal"></i> Software Developer
+                    </div>
+                </div>
+            </div>
+            <p class="dev-intro dev-intro-mobile">
+                I'm a Software Developer focused on building modern, responsive, and user-friendly web
+                applications. Feel free to connect with me for projects, collaborations, or professional
+                opportunities.
+            </p>
+            <div class="dev-status dev-status-mobile">
+                <span class="dev-status-dot"></span>
+                <span class="dev-status-text">Available for Projects &amp; Collaborations</span>
+            </div>
+
+            <!-- Developer Contact Cards (Mobile View) -->
+            <div class="dev-mobile-contact-section">
+                <div class="dev-contact-cards dev-mobile-cards">
+                    <a href="tel:+917390878170" class="dev-contact-card" aria-label="Call OP SOHIL">
+                        <div class="dev-icon-wrapper dev-icon-phone">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="dev-contact-info">
+                            <span class="dev-label">Phone</span>
+                            <span class="dev-value">+91 7390878170</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square dev-card-arrow"></i>
+                    </a>
+
+                    <a href="mailto:sq300151@gmail.com" class="dev-contact-card" aria-label="Email OP SOHIL">
+                        <div class="dev-icon-wrapper dev-icon-email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="dev-contact-info">
+                            <span class="dev-label">Email</span>
+                            <span class="dev-value">sq300151@gmail.com</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square dev-card-arrow"></i>
+                    </a>
+                </div>
+
+                <div class="dev-social-group dev-mobile-social">
+                    <span class="dev-social-title">Connect on Social</span>
+                    <div class="dev-social-buttons dev-mobile-buttons">
+                        <a href="https://www.linkedin.com/in/mo-sohel-b2bb62385?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                            target="_blank" rel="noopener noreferrer" class="dev-social-link dev-linkedin"
+                            aria-label="LinkedIn Profile">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+
+                        <a href="https://www.instagram.com/op____sohil?stkn=bnZrNG9vazhqbW04" target="_blank"
+                            rel="noopener noreferrer" class="dev-social-link dev-instagram"
+                            aria-label="Instagram Profile">
+                            <i class="fa-brands fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== SOCIAL MEDIA ICONS (JUST ABOVE OP SOHIL DEVELOPER DETAILS on desktop; below on mobile via CSS) ===================== -->
+        <div class="studio-social-strip">
+            <a href="https://www.instagram.com/sohil_style_barber_musanagar_?obrf=dHR4ajlhN2p2NWkw" target="_blank"
+                rel="noopener noreferrer" class="studio-social-link insta" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://www.facebook.com/sohilaalam87" target="_blank" rel="noopener noreferrer"
+                class="studio-social-link fb" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="https://wa.me/917355954554?text=Hello%20I%20am%20Sohil.%20I%20would%20like%20to%20book%20an%20appointment%20at%20Sohil%20Hair%20Studio.%20Please%20let%20me%20know%20the%20available%20time."
+                target="_blank" rel="noopener noreferrer" class="studio-social-link wa" aria-label="Chat on WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <div class="dev-footer-container">
+            <!-- Left: Branding & Introduction -->
+            <div class="dev-footer-left">
+                <div class="dev-brand">
+                    <div class="dev-logo-badge">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="dev-brand-text">
+                        <h3 class="dev-name">OP SOHIL</h3>
+                        <div class="dev-role-badge">
+                            <i class="fa-solid fa-terminal"></i> Software Developer
+                        </div>
+                    </div>
+                </div>
+
+                <p class="dev-intro">
+                    I'm a Software Developer focused on building modern, responsive, and user-friendly web
+                    applications. Feel free to connect with me for projects, collaborations, or professional
+                    opportunities.
+                </p>
+
+                <div class="dev-status">
+                    <span class="dev-status-dot"></span>
+                    <span class="dev-status-text">Available for Projects & Collaborations</span>
+                </div>
+
+                <div class="dev-tech-stack">
+                    <span class="dev-tech-pill"><i class="fa-brands fa-js"></i> JavaScript</span>
+                    <span class="dev-tech-pill"><i class="fa-brands fa-react"></i> React</span>
+                    <span class="dev-tech-pill"><i class="fa-brands fa-python"></i> Python</span>
+                    <span class="dev-tech-pill"><i class="fa-brands fa-html5"></i> HTML5 / CSS3</span>
+                    <span class="dev-tech-pill"><i class="fa-solid fa-layer-group"></i> Responsive UI/UX</span>
+                </div>
+            </div>
+
+            <!-- Right: Contact Me & Social Profiles -->
+            <div class="dev-footer-right">
+                <div class="dev-section-heading">
+                    <h4>Contact Me</h4>
+                    <span class="dev-red-bar"></span>
+                </div>
+
+                <div class="dev-contact-cards">
+                    <a href="tel:+917390878170" class="dev-contact-card" aria-label="Call OP SOHIL">
+                        <div class="dev-icon-wrapper dev-icon-phone">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="dev-contact-info">
+                            <span class="dev-label">Phone</span>
+                            <span class="dev-value">+91 7390878170</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square dev-card-arrow"></i>
+                    </a>
+
+                    <a href="mailto:sq300151@gmail.com" class="dev-contact-card" aria-label="Email OP SOHIL">
+                        <div class="dev-icon-wrapper dev-icon-email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="dev-contact-info">
+                            <span class="dev-label">Email</span>
+                            <span class="dev-value">sq300151@gmail.com</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square dev-card-arrow"></i>
+                    </a>
+                </div>
+
+                <div class="dev-social-group">
+                    <span class="dev-social-title">Connect on Social</span>
+                    <div class="dev-social-buttons">
+                        <a href="https://www.linkedin.com/in/mo-sohel-b2bb62385?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                            target="_blank" rel="noopener noreferrer" class="dev-social-link dev-linkedin"
+                            aria-label="LinkedIn Profile">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+
+                        <a href="https://www.instagram.com/op____sohil?stkn=bnZrNG9vazhqbW04" target="_blank"
+                            rel="noopener noreferrer" class="dev-social-link dev-instagram"
+                            aria-label="Instagram Profile">
+                            <i class="fa-brands fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Divider & Copyright -->
+        <div class="dev-footer-bottom">
+            <div class="dev-divider-line"></div>
+            <div class="dev-bottom-inner">
+                <p class="dev-copyright">
+                    © 2026 OP SOHIL. All Rights Reserved. &nbsp;|&nbsp; <a href="admin/index.html" style="color:#64748b;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#ff1a1a'" onmouseout="this.style.color='#64748b'"><i class="fa-solid fa-lock" style="font-size:11px;"></i> Admin</a>
+                </p>
+                <p class="dev-credit">
+                    Designed &amp; Developed by <span class="dev-credit-highlight">OP SOHIL</span> <i
+                        class="fa-solid fa-code"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- =========================
+     WHATSAPP SCRIPT
+========================= -->
+
+    <script>
+
+        document.getElementById("appointmentForm").addEventListener("submit", function (e) {
+
+            e.preventDefault();
+
+
+            // Get form values
+
+            const name =
+                this.querySelector('input[type="text"]').value;
+
+            const phone =
+                this.querySelector('input[type="tel"]').value;
+
+            const service =
+                this.querySelector('select').value;
+
+            const date =
+                this.querySelector('input[type="date"]').value;
+
+            const message =
+                this.querySelector('textarea').value;
+
+
+            // WhatsApp message
+
+            const whatsappMessage =
+                `🔔 *NEW APPOINTMENT BOOKING*
+
+👤 *Name:* ${name}
+
+📞 *Phone:* ${phone}
+
+💇 *Service:* ${service}
+
+📅 *Date:* ${date}
+
+💬 *Message:* ${message || "No message"}
+
+━━━━━━━━━━━━━━━━━━
+*Sohil Hair Studio*`;
+
+
+            // Your WhatsApp number
+            // +91 7355954554
+
+            const whatsappURL =
+                "https://wa.me/917355954554?text=" +
+                encodeURIComponent(whatsappMessage);
+
+
+            // Open WhatsApp
+
+            window.open(whatsappURL, "_blank");
+
+        });
+
+    </script>
+    <!-- GSAP & VanillaTilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animation.js"></script>
+    <div class="mouse-light"></div>
+
+    <!-- ===================== GALLERY SYNC — FEATURED PHOTOS ON HOMEPAGE ===================== -->
+    <!-- Priority 1: Firebase (when configured). Priority 2: Admin localStorage. Priority 3: Static HTML. -->
+    <script type="module">
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_PROJECT_ID.appspot.com",
+            messagingSenderId: "YOUR_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
+
+        const catIcons = {
+            'Haircut':'fa-scissors','Beard Styling':'fa-user','Hair Color':'fa-droplet',
+            'Kids Haircut':'fa-child','Grooming':'fa-crown','Hair Spa':'fa-spa'
+        };
+
+        function buildGalleryItem(p) {
+            const icon = catIcons[p.category] || 'fa-scissors';
+            const item = document.createElement('div');
+            item.className = 'gallery-item skeleton-loading';
+            item.innerHTML = `
+                <img src="${p.thumbUrl || p.url}" alt="${p.title || 'Gallery Photo'}" loading="lazy" width="400" height="410">
+                <div class="gallery-overlay">
+                    <i class="fa-solid ${icon}"></i>
+                    <h3>${p.title || 'Premium Style'}</h3>
+                    <p>${p.category || 'Premium Style'}</p>
+                </div>`;
+            const img = item.querySelector('img');
+            img.onload = () => { item.classList.remove('skeleton-loading'); img.classList.add('media-loaded'); };
+            img.onerror = () => item.classList.remove('skeleton-loading');
+            return item;
+        }
+
+        // ── PRIORITY 1: Firebase (when configured) ──
+        if (firebaseConfig.apiKey && firebaseConfig.apiKey !== 'YOUR_API_KEY') {
+            try {
+                const { initializeApp } = await import('https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js');
+                const { getFirestore, collection, query, where, orderBy, getDocs, limit } =
+                    await import('https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js');
+
+                const app = initializeApp(firebaseConfig, 'gallery-public');
+                const db  = getFirestore(app);
+
+                const snap = await getDocs(query(
+                    collection(db,'gallery'),
+                    where('featured','==',true),
+                    orderBy('order','asc'),
+                    limit(12)
+                ));
+                if (!snap.empty) {
+                    const grid = document.querySelector('.gallery-grid');
+                    if (grid) {
+                        grid.innerHTML = '';
+                        snap.forEach(d => grid.appendChild(buildGalleryItem(d.data())));
+                    }
+                }
+            } catch(e) { console.warn('Firebase gallery error, falling back:', e.message); }
+
+        // ── PRIORITY 2: Admin localStorage (no Firebase yet) ──
+        } else {
+            try {
+                const stored = localStorage.getItem('sohil_gallery');
+                if (stored) {
+                    const allPhotos = JSON.parse(stored);
+                    if (allPhotos && allPhotos.length > 0) {
+                        // Check if any are explicitly marked featured
+                        const featuredList = allPhotos.filter(p => p.featured);
+                        // If user marked some as featured, show them; otherwise show all uploaded photos!
+                        const photosToShow = (featuredList.length > 0 ? featuredList : allPhotos)
+                            .sort((a, b) => (a.order || 99) - (b.order || 99))
+                            .slice(0, 12);
+
+                        if (photosToShow.length > 0) {
+                            const grid = document.querySelector('.gallery-grid');
+                            if (grid) {
+                                grid.innerHTML = '';
+                                photosToShow.forEach(p => grid.appendChild(buildGalleryItem(p)));
+                            }
+                        }
+                    }
+                }
+                // If localStorage is empty → static HTML stays (Priority 3)
+            } catch(e) { console.warn('localStorage gallery error:', e.message); }
+        }
+    </script>
+
+    <!-- ===================== MOBILE FIXED BOTTOM NAVBAR (max-width: 768px only) ===================== -->
+    <nav class="mobile-bottom-nav" aria-label="Mobile social navigation">
+        <a href="https://www.instagram.com/sohil_style_barber_musanagar_?obrf=dHR4ajlhN2p2NWkw"
+            target="_blank" rel="noopener noreferrer" class="mob-nav-link mob-nav-insta" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/sohilaalam87"
+            target="_blank" rel="noopener noreferrer" class="mob-nav-link mob-nav-fb" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://wa.me/917355954554?text=Hello%20I%20am%20Sohil.%20I%20would%20like%20to%20book%20an%20appointment%20at%20Sohil%20Hair%20Studio.%20Please%20let%20me%20know%20the%20available%20time."
+            target="_blank" rel="noopener noreferrer" class="mob-nav-link mob-nav-wa" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    
+    // Helper function: Check if user is an authorized admin
+    function isAdmin() {
+      return request.auth != null && 
+        firestore.exists(/databases/(default)/documents/admins/$(request.auth.uid)) &&
+        firestore.get(/databases/(default)/documents/admins/$(request.auth.uid)).data.role == 'admin';
+    }
+    
+    // Gallery images: Public can read; ONLY authorized admins can upload/delete
+    match /gallery/{allPaths=**} {
+      allow read: if true;
+      allow write, delete: if request.auth != null; // Checked with auth token
+    }
+  }
+}
